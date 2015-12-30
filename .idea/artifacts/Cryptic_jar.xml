@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="Cryptic:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Cryptic_jar</output-path>
+    <root id="archive" name="Cryptic.jar">
+      <element id="module-output" name="Cryptic" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/sqlite-jdbc-3.8.11.2.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

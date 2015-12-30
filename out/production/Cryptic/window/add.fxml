@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="450.0" prefWidth="550.0" style="-fx-background-color: transparent;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="window.AddAccountController">
+  <children>
+    <VBox id="displayLayout" layoutX="0.0" layoutY="0.0" prefHeight="450.0" prefWidth="550.0">
+      <children>
+        <Label alignment="CENTER" prefWidth="550.0" text="Add Account" textFill="#ef6c00">
+          <font>
+            <Font name="Iowan Old Style Bold" size="30.0" />
+          </font>
+        </Label>
+        <ChoiceBox fx:id="choiceBox" style="-fx-background-color: #FF9800;">
+          <items>
+            <FXCollections fx:factory="observableArrayList">
+              <String fx:value="Website" />
+              <String fx:value="Email" />
+              <String fx:value="Application" />
+              <String fx:value="Bank Account" />
+            </FXCollections>
+          </items>
+          <VBox.margin>
+            <Insets left="210.0" />
+          </VBox.margin>
+        </ChoiceBox>
+        <Pane fx:id="displayLayout" prefHeight="388.0" prefWidth="550.0" />
+      </children>
+    </VBox>
+  </children>
+</AnchorPane>

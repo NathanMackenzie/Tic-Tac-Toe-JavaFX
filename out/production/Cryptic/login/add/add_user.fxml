@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="350.0" prefWidth="250.0" style="-fx-background-color: rgba(1, 1, 1, .85);" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="login.add.AddUserController">
+  <Button layoutX="0.0" layoutY="0.0" mnemonicParsing="false" onAction="#close" style="-fx-background-color: transparent;&#10;-fx-cursor: hand;" text="X" textFill="#616161">
+    <font>
+      <Font name="Avenir Black Oblique" size="15.0" />
+    </font>
+  </Button>
+  <Label layoutX="25.0" layoutY="51.0" text="User Name:">
+    <textFill>
+      <Color blue="0.000" green="0.424" red="0.937" fx:id="x2" />
+    </textFill>
+  </Label>
+  <Label layoutX="25.0" layoutY="115.0" text="Password:" textFill="$x2" />
+  <Label layoutX="25.0" layoutY="183.0" text="Verify Password:">
+    <textFill>
+      <Color blue="0.000" green="0.424" red="0.937" fx:id="x1" />
+    </textFill>
+  </Label>
+  <TextField fx:id="userName" layoutX="25.0" layoutY="73.0" prefWidth="200.0" style="-fx-background-color: #FFB74D;" />
+  <PasswordField fx:id="password1" layoutX="25.0" layoutY="140.0" prefWidth="200.0" style="-fx-background-color: #FFB74D;" />
+  <PasswordField fx:id="password2" layoutX="25.0" layoutY="208.0" prefWidth="200.0" style="-fx-background-color: #FFB74D;" />
+  <Button layoutX="73.0" layoutY="275.0" mnemonicParsing="false" onAction="#createUser" prefHeight="35.0" prefWidth="104.00009999999747" style="-fx-background-color: #FF9800;" text="Create" textFill="#9e9e9e" />
+  <Label fx:id="errorMessage" alignment="CENTER" layoutX="19.0" layoutY="246.0" prefWidth="217.0" text="" textAlignment="CENTER" textFill="$x1" wrapText="false">
+    <font>
+      <Font name="Al Bayan Bold" size="13.0" />
+    </font>
+  </Label>
+</AnchorPane>
